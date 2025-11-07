@@ -10,3 +10,14 @@ Geben Sie die Summe der Zahlen in die Konsole aus:
 */
 
 const prompt = require('prompt-sync')({sigint: true});
+
+let promptOne = prompt("Zahl 1?: "); // Zahl 1 als String
+let promptTwo = prompt("Zahl 2?: "); // Zahl 2 als String
+
+console.log(promptOne); 
+console.log(promptTwo); 
+
+promptOne = parseInt(promptOne); // Umwandeln in eine Zahl
+promptTwo = parseInt(promptTwo); // Umwandeln in eine Zahl
+
+console.log(promptOne + promptTwo); 
